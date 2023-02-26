@@ -150,6 +150,9 @@ body {
 	border-radius: 0.4rem;
 	background-color: rgba(0, 0, 0, 0.3);
 	margin-right: 0.4rem;
+	color: inherit;
+	font: inherit;
+	font-size: max(0.7rem, 1vw);
 }
 
 .tab:hover {
@@ -228,6 +231,16 @@ a {
 
 a:hover {
 	color: pink;
+}
+
+@media screen and (max-width: 600px) {
+	.window {
+		height: 100%;
+		width: 100%;
+	}
+	.taskbar {
+		width: 80%;
+	}
 }
 
 @keyframes fadeIn {

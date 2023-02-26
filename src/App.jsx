@@ -40,8 +40,9 @@ function App() {
 			<div className="window">
 				<div className="window-header glassy">
 					<div className="tabs">
-						<div className="tab glassy">Portfolio of Kağan</div>
-						<div className="tab glassy">+</div>
+						<button className="tab glassy">Portfolio of Kağan</button>
+						<button className="tab glassy">Contact Me</button>
+						<button className="tab glassy">+</button>
 					</div>
 					<div>
 						<VscChromeMinimize size={"20"} />
