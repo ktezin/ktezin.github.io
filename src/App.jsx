@@ -40,7 +40,7 @@ function App() {
 			<div className="window">
 				<div className="window-header glassy">
 					<div className="tabs">
-						<div className="tab glassy">Portfolio of Kağan T</div>
+						<div className="tab glassy">Portfolio of Kağan</div>
 						<div className="tab glassy">+</div>
 					</div>
 					<div>
@@ -61,8 +61,7 @@ function App() {
 					<div className="portfolio">
 						<div className="paper">
 							<h1>Kağan Tezin</h1>
-							<h2>Developer</h2>
-							<p>I'm a full-stack solo web developer</p>
+							<p>I'm a self taught full-stack web developer</p>
 						</div>
 						<div className="chips">
 							<button className="chip">JavaScript</button>
