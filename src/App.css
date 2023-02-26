@@ -70,7 +70,13 @@ body {
 }
 
 .repo {
+	padding: 1rem;
 	border-bottom: 1px solid lightgrey;
+}
+
+.repo:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: red;
 }
 
 .repo-description {
@@ -173,4 +179,8 @@ body {
 a {
 	color: white;
 	text-decoration: none;
+}
+
+a:hover {
+	color: pink;
 }
