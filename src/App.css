@@ -17,7 +17,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url("./wallpaper.webp");
+	background-image: url("./assets/wallpaper.webp");
 }
 
 .paper {
@@ -104,7 +104,7 @@ body {
 
 .window-content {
 	border: 1px solid rgba(0, 0, 0, 0.24);
-	background-image: url("./background.webp");
+	background-image: url("./assets/background.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
