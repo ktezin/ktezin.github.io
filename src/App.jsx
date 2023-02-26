@@ -50,10 +50,16 @@ function App() {
 					</div>
 				</div>
 				<div className="toolbar glassy">
-					<div className="navigation">
-						<MdArrowBack size={"20"} />
-						<MdArrowForward size={"20"} />
-						<MdRefresh size={"20"} />
+					<div className="nav">
+						<div className="nav-button">
+							<MdArrowBack size={"20"} />{" "}
+						</div>
+						<div className="nav-button">
+							<MdArrowForward size={"20"} />
+						</div>
+						<div className="nav-button">
+							<MdRefresh size={"20"} />
+						</div>
 					</div>
 					<div className="search-box">https://ktezin.github.io</div>
 				</div>

@@ -135,6 +135,11 @@ body {
 	margin-right: 0.4rem;
 }
 
+.tab:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: pink;
+}
+
 .toolbar {
 	display: flex;
 	background-color: rgba(0, 0, 0, 0.3);
@@ -142,8 +147,22 @@ body {
 	padding: 0 1rem;
 }
 
-.navigation {
+.nav {
+	display: flex;
+	align-items: center;
 	margin: auto 0;
+}
+
+.nav-button {
+	display: flex;
+	align-items: center;
+	padding: 0.2rem;
+	border-radius: 0.2rem;
+}
+
+.nav-button:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: pink;
 }
 
 .search-box {
@@ -152,6 +171,11 @@ body {
 	background-color: rgba(0, 0, 0, 0.3);
 	padding: 0.2rem;
 	border-radius: 0.2rem;
+}
+
+.search-box:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: pink;
 }
 
 .taskbar {
