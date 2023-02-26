@@ -26,6 +26,13 @@ body {
 	font-size: 2vw;
 }
 
+.paper:hover {
+	animation: scaleUpDown 2s infinite;
+	-moz-animation: scaleUpDown 2s infinite;
+	-webkit-animation: scaleUpDown 2s infinite;
+	-o-animation: scaleUpDown 2s infinite;
+}
+
 .chips {
 	display: flex;
 	justify-content: center;
@@ -48,6 +55,12 @@ body {
 
 .chip:hover {
 	border-color: rgba(255, 80, 0, 0.4);
+	color: purple;
+	opacity: 1;
+	animation: fadeInOut 2s infinite;
+	-moz-animation: fadeInOut 2s infinite;
+	-webkit-animation: fadeInOut 2s infinite;
+	-o-animation: fadeInOut 2s infinite;
 }
 
 .chip:focus,
@@ -96,6 +109,10 @@ body {
 	border-radius: 0.2rem;
 	height: 60vh;
 	width: 60vw;
+	animation: fadeIn 1s;
+	-moz-animation: fadeIn 1s;
+	-webkit-animation: fadeIn 1s;
+	-o-animation: fadeIn 1s;
 }
 
 .window-header {
@@ -190,6 +207,10 @@ body {
 	bottom: 0;
 	border-radius: 0.4rem;
 	background-color: rgba(0, 0, 0, 0.38);
+	animation: fadeIn 1s;
+	-moz-animation: fadeIn 1s;
+	-webkit-animation: fadeIn 1s;
+	-o-animation: fadeIn 1s;
 }
 
 .glassy {
@@ -207,4 +228,37 @@ a {
 
 a:hover {
 	color: pink;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInOut {
+	0% {
+		opacity: 0.5;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
+
+@keyframes scaleUpDown {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
