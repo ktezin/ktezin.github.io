@@ -96,7 +96,13 @@ const App = () => {
 							</div>{" "}
 						</div>
 					) : (
-						<div className="portfolio">Contact Me Page</div>
+						<form className="contact-me glassy">
+							<h1>Contact Me</h1>
+							<input type="email" name="email" placeholder="Enter your email" />
+							<input type="text" name="name" placeholder="Enter your name" />
+							<textarea name="message" placeholder="Enter your message" />
+							<button className="submit" type="submit">Send</button>
+						</form>
 					)}
 				</div>
 			</div>

@@ -1,3 +1,7 @@
+html * {
+	font-family: "Roboto";
+}
+
 body {
 	font-family: "Roboto";
 	height: 100%;
@@ -8,7 +12,6 @@ body {
 	color: #fff;
 	background-color: #213547;
 	background-image: url("./assets/wallpaper.webp");
-	font-family: "Roboto";
 	margin: 0 auto;
 }
 
@@ -108,6 +111,53 @@ body {
 	text-decoration: none;
 }
 
+.contact-me {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	width: 80%;
+	margin: 2rem auto;
+	padding: 2rem 0;
+}
+
+input,
+textarea,
+.submit {
+	font-size: 1.2rem;
+	font-weight: 200;
+	width: 50%;
+	height: 3rem;
+	border: none;
+	border-bottom: 1px solid white;
+	border-radius: 0.1rem;
+	padding: 0 1rem;
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #fff;
+}
+
+textarea {
+	height: 150px;
+	padding: 1rem;
+}
+
+input:focus,
+textarea:focus,
+.submit:focus {
+	outline: none;
+	border-bottom: 1px solid pink;
+}
+
+.submit {
+	background-color: #800080;
+}
+
+.submit:hover {
+	background-color: #5B3256;
+	color: pink;
+}
+
 .window {
 	border: 1px solid rgba(0, 0, 0, 0.24);
 	border-radius: 0.2rem;
@@ -115,7 +165,7 @@ body {
 	width: 60vw;
 	animation: scaleUp 0.4s;
 	-moz-animation: scaleUp 0.4s;
-	-webkit-animation: scaleUp 0.4s;;
+	-webkit-animation: scaleUp 0.4s;
 	-o-animation: scaleUp 0.4s;
 }
 
@@ -288,4 +338,3 @@ a:hover {
 		transform: scale(1);
 	}
 }
-
