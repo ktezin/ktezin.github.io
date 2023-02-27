@@ -5,8 +5,9 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	color: #213547;
-	background-color: #ffffff;
+	color: #fff;
+	background-color: #213547;
+	background-image: url("./assets/wallpaper.webp");
 	font-family: "Roboto";
 	margin: 0 auto;
 }
@@ -17,7 +18,10 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url("./assets/wallpaper.webp");
+	animation: fadeIn 1s;
+	-moz-animation: fadeIn 1s;
+	-webkit-animation: fadeIn 1s;
+	-o-animation: fadeIn 1s;
 }
 
 .paper {
@@ -109,10 +113,10 @@ body {
 	border-radius: 0.2rem;
 	height: 60vh;
 	width: 60vw;
-	animation: fadeIn 1s;
-	-moz-animation: fadeIn 1s;
-	-webkit-animation: fadeIn 1s;
-	-o-animation: fadeIn 1s;
+	animation: scaleUp 0.4s;
+	-moz-animation: scaleUp 0.4s;
+	-webkit-animation: scaleUp 0.4s;;
+	-o-animation: scaleUp 0.4s;
 }
 
 .window-header {
@@ -275,3 +279,13 @@ a:hover {
 		transform: scale(1);
 	}
 }
+
+@keyframes scaleUp {
+	0% {
+		transform: scale(0.6);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
