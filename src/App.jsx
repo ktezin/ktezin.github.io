@@ -17,7 +17,8 @@ import { GrAppsRounded } from "react-icons/gr";
 import { FaFirefoxBrowser } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
-function App() {
+const App = () => {
+	const [currentTab, setCurrentTab] = useState(0);
 	const [repos, setRepos] = useState([]);
 
 	useEffect(() => {
@@ -40,8 +41,12 @@ function App() {
 			<div className="window">
 				<div className="window-header glassy">
 					<div className="tabs">
-						<button className="tab glassy">Portfolio of Kağan</button>
-						<button className="tab glassy">Contact Me</button>
+						<button className="tab glassy" onClick={() => setCurrentTab(0)}>
+							Portfolio of Kağan
+						</button>
+						<button className="tab glassy" onClick={() => setCurrentTab(1)}>
+							Contact Me
+						</button>
 						<button className="tab glassy">+</button>
 					</div>
 					<div>
@@ -65,30 +70,34 @@ function App() {
 					<div className="search-box">https://ktezin.github.io</div>
 				</div>
 				<div className="window-content">
-					<div className="portfolio">
-						<div className="paper">
-							<h1>Kağan Tezin</h1>
-							<p>I'm a self taught full-stack web developer</p>
+					{currentTab === 0 ? (
+						<div className="portfolio">
+							<div className="paper">
+								<h1>Kağan Tezin</h1>
+								<p>I'm a self taught full-stack web developer</p>
+							</div>
+							<div className="chips">
+								<button className="chip">JavaScript</button>
+								<button className="chip">Express</button>
+								<button className="chip">React</button>
+							</div>
+							<div className="repos-container glassy">
+								<h4>My Repositories</h4>
+								<ul className="repos">
+									{repos.map((repo, key) => (
+										<li key={key} className="repo">
+											<a href={`https://github.com/${repo.name}`}>
+												<p>{repo.name}</p>
+												<p className="repo-description">{repo.description}</p>
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>{" "}
 						</div>
-						<div className="chips">
-							<button className="chip">JavaScript</button>
-							<button className="chip">Express</button>
-							<button className="chip">React</button>
-						</div>
-						<div className="repos-container glassy">
-							<h4>My Repositories</h4>
-							<ul className="repos">
-								{repos.map((repo, key) => (
-									<li key={key} className="repo">
-										<a href={`https://github.com/${repo.name}`}>
-											<p>{repo.name}</p>
-											<p className="repo-description">{repo.description}</p>
-										</a>
-									</li>
-								))}
-							</ul>
-						</div>
-					</div>
+					) : (
+						<div className="portfolio">Contact Me Page</div>
+					)}
 				</div>
 			</div>
 			<div className="taskbar glassy">
@@ -97,6 +106,6 @@ function App() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default App;
